@@ -1,19 +1,17 @@
 #include <stdio.h>
 
-int heithPixels, withPixels;
+int heithPixels, withPixels; 
 float heithElemet, withElemet, positionX, positionY;
 
-int main()
+void main() 
 {
-    scanf_s("%d %d", &withPixels, &heithPixels);
+    scanf("%d %d",&withPixels,&heithPixels);
     //calcular las dimeciones del letrero
-    heithElemet = heithPixels * 0.1;
-    withElemet = withPixels * 0.5;
-    //calcular la pocion en la que debe de emeger el elemento
-    positionX = (withPixels - withElemet - (withPixels * 0.25));
-    positionY = (heithPixels - heithElemet - (heithPixels * 0.78));
-    return 0;
-    
-    //Mostar datos de salida
-    //printf("%d %d %.2f %.2f %.2f %.2f", withPixels, heithPixels, positionx_Inper_cent, positiony_Inper_cent, withElemet, heithElemet);
+    heithElemet = heithPixels*0.1;
+    withElemet = withPixels*0.5;
+    //calcular la pocion en la que debde de emeger el elemento
+    positionX = (withPixels -withElemet-(withPixels*0.25));
+    positionY = (heithPixels-heithElemet-(heithPixels*0.78));
+    //mostrar datos
+    printf("%d %d %f %f %f %f", withPixels, heithPixels, positionX, positionY, withElemet, heithElemet);
 }
