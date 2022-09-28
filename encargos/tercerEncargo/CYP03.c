@@ -14,24 +14,24 @@ int main()
                 day=1;
                 if (month==12)
                 {
-                    year++,month-11;
-                    printf("es un nuevo mes con el dia %d y un nuevo año %d",day,year);
+                    year++,month=1;
+                    printf("%2d %2d %4d",day, month,year);
                 }
                 else
                 {
                     month++;
-                    printf("el dia es %d del mes %d del año %d", day, month, year);    
+                    printf("%2d %2d %4d",day, month,year);  
                 }
             }
             else if (day==4&&month==10&&1582)
             {
                 day=15;
-                printf("Bien esta es una fecha especial el dia de hoy es %d",day);
+                printf("%2d %2d %4d",day, month,year);
             }
             else
             {
                 day++;
-                printf("el dia es %d del mes %d del año %d", day, month, year);
+                printf("%2d %2d %4d",day, month,year);
             }
         }
         else if (month==4||month==9||month==6||month==11)
@@ -39,12 +39,12 @@ int main()
             if (day==30)
             {
                 day=1,month++;
-                printf("es un nuevo mes con el dia %d",day);
+                printf("%2d %2d %4d",day, month,year);
             }
             else
             {
                 day++;
-                printf("el dia es %d el mes es %d y el año es %d",day,month,year);
+                printf("%2d %2d %4d",day, month,year);
             }
         }
         else
@@ -54,18 +54,18 @@ int main()
                 if (year%400==0||year%4==0)
                 {
                     day++;
-                    printf("el dia es %d el mes es %d y el año es %d",day,month,year);
+                    printf("%2d %2d %4d",day, month,year);
                 }
                 else
                 {
                     day=1,month++;
-                    printf("el dia es %d el mes es %d y el año es %d",day,month,year);
+                    printf("%2d %2d %4d",day, month,year);
                 }
             }
             else
             {
-                day=1,month++;
-                printf("el dia es %d el mes es %d y el año es %d",day,month,year);
+                day++,month++;
+                printf("%2d %2d %4d",day, month,year);
             }
         }   
     }
@@ -74,9 +74,4 @@ int main()
         printf("acaso eres bruto, esa fecha no existe");
     }
     return 0;
-}
-
-int treeDesition()
-{
-    
 }
