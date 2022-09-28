@@ -53,8 +53,16 @@ int main()
             {
                 if (year%400==0||year%4==0)
                 {
-                    day++;
-                    printf("%2d %2d %4d",day, month,year);
+                    if (year==!100||year==!200||year==!300||year==!500||year==!700)
+                    {
+                        day=1,month++;
+                        printf("%2d %2d %4d",day, month,year);
+                    }
+                    else
+                    {
+                        day++;
+                        printf("%2d %2d %4d",day, month,year);
+                    }
                 }
                 else
                 {
@@ -64,7 +72,7 @@ int main()
             }
             else
             {
-                day++,month++;
+                day++;
                 printf("%2d %2d %4d",day, month,year);
             }
         }   
