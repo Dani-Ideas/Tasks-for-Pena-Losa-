@@ -3,7 +3,6 @@
 void main(void)
 {
     int iLimite;
-    int iContador;
     printf("inique el numero de ''*'' que quira\n");
     scanf("%i", &iLimite);
 
