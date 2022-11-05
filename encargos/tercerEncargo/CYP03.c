@@ -41,20 +41,7 @@ int treeDesition(int *day, int *month,int *year)
             {
                 if (*year%400==0||*year%4==0)
                 {
-<<<<<<< HEAD
                     return*day++;
-=======
-                    if (year==100)
-                    {
-                        day=1,month++;
-                        printf("%2d %2d %4d",day, month,year);
-                    }
-                    else
-                    {
-                        day++;
-                        printf("%2d %2d %4d",day, month,year);
-                    }
->>>>>>> develop2
                 }
                 else
                 {
@@ -63,12 +50,7 @@ int treeDesition(int *day, int *month,int *year)
             }
             else
             {
-<<<<<<< HEAD
                 return*day++,*month++;
-=======
-                day++;
-                printf("%2d %2d %4d",day, month,year);
->>>>>>> develop2
             }
         }   
 }
