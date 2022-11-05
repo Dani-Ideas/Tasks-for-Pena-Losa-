@@ -2,17 +2,23 @@
 //hacer un programa que imprima el signo "*" el número de veces que sea indicado
 void main(void)
 {
-    int iLimite, iContador, continuar=1;
+    int iLimite, iFilas,iColumnas, continuar=1;
     
     while (continuar)
     {
-        iContador=0;
+        iFilas=iColumnas=0;
         printf("Limite\n");
         scanf("%i", &iLimite);
-        while (iContador < iLimite)
+        while (iFilas < iLimite)
         {
-            printf("*");
-            iContador= iContador +1;
+            while (iColumnas < iLimite)
+            {
+                printf("* ");
+                iColumnas= iColumnas +1;
+            }
+            iColumnas=0;
+            printf("\n");
+            iFilas= iFilas+1;
         }
         printf("¿Se te ocurre otro numero?\nSí= cualquier tecla, No=0\n");
         scanf("%i", &continuar);
