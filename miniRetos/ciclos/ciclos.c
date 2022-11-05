@@ -4,13 +4,14 @@ void main(void)
 {
     int iLimite;
     int iContador;
-    printf("inique el numero de ''*'' que quira\n");
+    printf("Limite\n");
     scanf("%i", &iLimite);
+    iContador=0;
 
-    while (iLimite)
+    while (iContador < iLimite)
     {
         printf("*");
-        iLimite--;
+        iContador= iContador +1;
     }
-    printf("\n fin\n");
+    printf("\n Fin\n");
 }
